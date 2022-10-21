@@ -1,0 +1,11 @@
+[2022-10-17 14:28:31] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9b72466a.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@6232ffdb
+[2022-10-17 14:28:54] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9b72466a.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@330c1f61
+[2022-10-17 14:28:54] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9b72466a.createTable(79) | ======TABLE derivative already exists !
+[2022-10-17 14:53:02] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9b72466a.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@330c1f61
+[2022-10-17 14:53:02] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9b72466a.createTable(79) | ======TABLE derivative already exists !
+[2022-10-17 16:13:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$458a10a9.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@22c75c01
+[2022-10-17 16:13:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$458a10a9.createTable(79) | ======TABLE derivative already exists !
+[2022-10-17 16:16:53] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@18371d89
+[2022-10-17 16:16:53] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.createTable(79) | ======TABLE derivative already exists !
+[2022-10-17 16:19:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ab72aa84.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@52d6d273
+[2022-10-17 16:19:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ab72aa84.createTable(79) | ======TABLE derivative already exists !

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+       xmlns:int-jdbc="http://www.springframework.org/schema/integration/jdbc"
+       xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/integration
+   http://www.springframework.org/schema/integration/spring-integration-5.2.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context.xsd
+   http://www.springframework.org/schema/integration/stream
+   http://www.springframework.org/schema/integration/stream/spring-integration-stream-5.2.xsd
+    http://www.springframework.org/schema/integration/jdbc
+    http://www.springframework.org/schema/integration/jdbc/spring-integration-jdbc-5.2.xsd
+">
+
+    <context:component-scan base-package="edu.hanoi.message edu.hanoi.data"/>
+
+
+    <int:channel id="helloChannel"/>
+    <int:channel id="stdoutChannel"/>
+    <int-stream:stdout-channel-adapter channel="stdoutChannel" append-newline="true"/>
+    <int:service-activator input-channel="helloChannel" ref="helloService" method="say" output-channel="stdoutChannel"/>
+
+    <int:channel id="groupChannel"/>
+    <int:service-activator input-channel="groupChannel" ref="groupService" output-channel="nullChannel"/>
+
+    <int-jdbc:outbound-channel-adapter id="dataChannel" query="insert into HN_GROUP(name) values(:payload.name)" data-source="dataSource_oracle">
+
+    </int-jdbc:outbound-channel-adapter>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        <property name="url" value="jdbc:derby:D:/LabSpringProject/hanoi-integration/db/userdb1;create=true"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="edu.hanoi.message.model"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.DerbyTenFiveDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="dataSource_oracle" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+        <property name="username" value="minh"/>
+        <property name="password" value="Minh1234"/>
+
+    </bean>
+
+    <bean id="sessionFactory_oracle" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource_oracle"/>
+        <property name="packagesToScan" value="edu.hanoi.message.model"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+            </props>
+        </property>
+    </bean>
+
+
+<!--    <bean id="startEventHandler" class="edu.hanoi.message.ContextStartEventHandler"/>-->
+</beans>

@@ -1,0 +1,304 @@
+[2022-10-18 08:35:24] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7a8b9166
+[2022-10-18 08:35:24] ERROR [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(45) | com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at com.spring.service.AppConfig.createTable(AppConfig.java:76)
+	at com.spring.service.AppConfig.configureDefaultServletHandling(AppConfig.java:33)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.configureDefaultServletHandling(WebMvcConfigurerComposite.java:74)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.configureDefaultServletHandling(DelegatingWebMvcConfiguration.java:73)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.defaultServletHandlerMapping(WebMvcConfigurationSupport.java:644)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.spring.service.DerivativeApplication.main(DerivativeApplication.java:10)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 40 more
+[2022-10-18 08:38:31] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7a8b9166
+[2022-10-18 08:38:31] ERROR [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(45) | com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at com.spring.service.AppConfig.createTable(AppConfig.java:76)
+	at com.spring.service.AppConfig.configureDefaultServletHandling(AppConfig.java:33)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.configureDefaultServletHandling(WebMvcConfigurerComposite.java:74)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.configureDefaultServletHandling(DelegatingWebMvcConfiguration.java:73)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.defaultServletHandlerMapping(WebMvcConfigurationSupport.java:644)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.spring.service.DerivativeApplication.main(DerivativeApplication.java:10)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 40 more
+[2022-10-18 08:40:43] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7a8b9166
+[2022-10-18 08:40:43] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 08:52:24] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7a8b9166
+[2022-10-18 08:52:24] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$6d900f28.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:04:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2ff7a73
+[2022-10-18 09:04:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:22:12] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@11e355ca
+[2022-10-18 09:22:12] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:23:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@e11ecfa
+[2022-10-18 09:23:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:24:28] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@70d63e05
+[2022-10-18 09:24:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:28:13] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38830ea
+[2022-10-18 09:28:13] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:29:19] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38830ea
+[2022-10-18 09:29:19] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:31:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38830ea
+[2022-10-18 09:31:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:32:08] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38830ea
+[2022-10-18 09:32:08] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:38:05] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7af3874e
+[2022-10-18 09:38:05] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 09:55:22] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ec47c62f.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@43982337
+[2022-10-18 09:55:22] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ec47c62f.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 10:26:58] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4832f03b
+[2022-10-18 10:26:58] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 10:31:20] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$3b19bb24.configureDefaultServletHandling(31) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@485e13d7
+[2022-10-18 10:31:20] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$3b19bb24.createTable(79) | ======TABLE derivative already exists !
+[2022-10-18 11:18:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ec47c62f.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@6f044c58
+[2022-10-18 11:18:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ec47c62f.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 11:22:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7af3874e
+[2022-10-18 11:22:11] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$83a4fa52.createTable(85) | ======TABLE derivative already exists !
+[2022-10-18 11:22:39] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 11:22:39] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(85) | ======TABLE derivative already exists !
+[2022-10-18 13:29:27] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$5fbbf037.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@68565bc7
+[2022-10-18 13:29:28] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$5fbbf037.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:31:24] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 13:31:24] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:34:00] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7af3874e
+[2022-10-18 13:34:00] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:34:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 13:34:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:38:19] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@37baddde
+[2022-10-18 13:38:19] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:38:54] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4832f03b
+[2022-10-18 13:38:54] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:44:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$7b4cc273.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5984feef
+[2022-10-18 13:44:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$7b4cc273.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:46:12] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9e612fe3.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5a8816cc
+[2022-10-18 13:46:12] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$9e612fe3.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:50:58] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@68565bc7
+[2022-10-18 13:50:58] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:58:21] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ab72aa84.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@3e5fd2b1
+[2022-10-18 13:58:22] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$ab72aa84.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 13:59:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4832f03b
+[2022-10-18 13:59:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:02:07] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:02:07] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:05:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:05:23] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:08:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@37baddde
+[2022-10-18 14:08:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:12:05] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:12:05] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:13:34] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:13:34] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:20:38] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@68565bc7
+[2022-10-18 14:20:38] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:22:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$358f7ce.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@6f044c58
+[2022-10-18 14:22:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$358f7ce.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:23:44] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:23:44] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:27:55] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:27:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:47:59] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 14:47:59] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:51:07] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7af3874e
+[2022-10-18 14:51:07] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:51:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5a8816cc
+[2022-10-18 14:51:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:53:14] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@68565bc7
+[2022-10-18 14:53:14] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 14:54:14] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@37baddde
+[2022-10-18 14:54:14] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 15:07:57] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@37baddde
+[2022-10-18 15:07:57] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !
+[2022-10-18 17:04:16] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5a8816cc
+[2022-10-18 17:04:16] ERROR [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(50) | com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at com.spring.service.AppConfig.createTable(AppConfig.java:81)
+	at com.spring.service.AppConfig.configureDefaultServletHandling(AppConfig.java:38)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.configureDefaultServletHandling(WebMvcConfigurerComposite.java:74)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.configureDefaultServletHandling(DelegatingWebMvcConfiguration.java:73)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.defaultServletHandlerMapping(WebMvcConfigurationSupport.java:644)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.spring.service.DerivativeApplication.main(DerivativeApplication.java:10)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 40 more
+[2022-10-18 17:04:52] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.configureDefaultServletHandling(34) | ======Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5115f590
+[2022-10-18 17:04:52] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$c56399ef.createTable(84) | ======TABLE derivative already exists !

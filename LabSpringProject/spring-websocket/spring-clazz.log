@@ -1,0 +1,4 @@
+[2022-10-17 08:34:04] INFO [clientInboundChannel-34] UserDAOImpl.insert(68) | Save user test11 done!test11
+[2022-10-17 09:21:18] INFO [clientInboundChannel-67] UserDAOImpl.insert(68) | Save user minhsoikiller34 done!minhsoikiller34
+[2022-10-17 09:22:33] INFO [clientInboundChannel-89] UserDAOImpl.update(84) | Save user test11 done!
+[2022-10-17 10:36:43] INFO [clientInboundChannel-64] UserDAOImpl.insert(68) | Save user test21 done!test21

@@ -1,0 +1,2 @@
+[2022-10-14 10:40:10] INFO [clientInboundChannel-7] UserDAOImpl.insert(68) | Save user test21 done!test21
+[2022-10-14 11:05:52] INFO [clientInboundChannel-7] UserDAOImpl.insert(68) | Save user test22 done!test22

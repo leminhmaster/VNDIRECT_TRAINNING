@@ -1,0 +1,1 @@
+UPDATE STUDENT SET age = ? WHERE name = ?

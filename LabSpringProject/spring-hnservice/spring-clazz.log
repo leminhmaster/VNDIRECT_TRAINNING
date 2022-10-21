@@ -1,0 +1,195 @@
+[2022-10-13 09:14:04] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$29d06cdb.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@14c141c0
+[2022-10-13 09:14:04] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$29d06cdb.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:14:04] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$29d06cdb.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:14:40] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(32) | 
+--------------> [ROLE_ADMIN, ROLE_USER]
+[2022-10-13 09:15:12] INFO [http-nio-8080-exec-3] UserRestServiceController.getListAdminUsers(76) | 
+--------------> [ROLE_ADMIN, ROLE_USER]
+[2022-10-13 09:16:48] INFO [http-nio-8080-exec-7] UserRestServiceController.getListAdminUsers(76) | 
+--------------> [ROLE_ADMIN, ROLE_USER]
+[2022-10-13 09:18:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$46c525aa.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4cfa83f9
+[2022-10-13 09:18:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$46c525aa.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:18:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$46c525aa.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:19:10] INFO [http-nio-8080-exec-1] UserRestServiceController.getListAdminUsers(74) | 
+--------------> [ROLE_ADMIN, ROLE_USER]
+[2022-10-13 09:22:30] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@318c68d5
+[2022-10-13 09:22:30] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:22:30] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:27:41] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$69086b92.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@41fa769c
+[2022-10-13 09:27:41] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$69086b92.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:27:41] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$69086b92.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:27:50] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(34) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:36:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@76536c53
+[2022-10-13 09:36:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:36:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@3a540d4f : read
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@8e48732 : read
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@41ea083c : read
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@423d77f3 : read
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@1a54e2b9 : read
+[2022-10-13 09:36:53] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@36253bd6 : read
+[2022-10-13 09:38:16] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38d08cb5
+[2022-10-13 09:38:16] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:38:16] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@787eef7 : read
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@2e8da3a2 : read
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@2955878b : read
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@5900b2d3 : read
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@a73f71e : read
+[2022-10-13 09:38:23] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(18) | ------->edu.hanoi.service.model.User@4920c541 : read
+[2022-10-13 09:53:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@76536c53
+[2022-10-13 09:53:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:53:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@3a540d4f : read
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@8e48732 : read
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@41ea083c : read
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@423d77f3 : read
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@1a54e2b9 : read
+[2022-10-13 09:53:09] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(19) | ------->edu.hanoi.service.model.User@36253bd6 : read
+[2022-10-13 09:54:48] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@76536c53
+[2022-10-13 09:54:48] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:54:48] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:55:04] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:56:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@38d08cb5
+[2022-10-13 09:56:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 09:56:42] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$f357a49e.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@76ca180b : read ---- username-random2 || 99
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@f3f7dc3 : read ---- username-random0 || 50
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@1a4209b0 : read ---- username-random3 || 33
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@56298fdf : read ---- test2 || 25
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@44f2783a : read ---- username-random1 || 12
+[2022-10-13 09:57:33] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(21) | ------->edu.hanoi.service.model.User@30d7c402 : read ---- username-random4 || 3
+[2022-10-13 10:17:38] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@7e91ed74
+[2022-10-13 10:17:39] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:17:39] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$4282854d.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:20:31] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$5ed61fef.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4cffcc61
+[2022-10-13 10:20:31] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$5ed61fef.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:20:31] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$5ed61fef.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@678dabe9 : read ---- username-random2 || 99
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@220c5982 : read ---- username-random0 || 50
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@3a164d67 : read ---- username-random3 || 33
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@52b99314 : read ---- test2 || 25
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@17585566 : read ---- username-random1 || 12
+[2022-10-13 10:20:42] INFO [http-nio-8080-exec-1] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5758ce46 : read ---- username-random4 || 3
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@651b4d0d : read ---- username-random2 || 99
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5f6b80b : read ---- username-random0 || 50
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@4f5bcf3e : read ---- username-random3 || 33
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@36ac4ceb : read ---- test2 || 25
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@9601c16 : read ---- username-random1 || 12
+[2022-10-13 10:26:21] INFO [http-nio-8080-exec-3] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@3966dbd1 : read ---- username-random4 || 3
+[2022-10-13 10:37:55] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@b61edb9
+[2022-10-13 10:37:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:37:56] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:37:57] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 10:38:57] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2abbd0d9
+[2022-10-13 10:38:57] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:38:57] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:40:25] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2abbd0d9
+[2022-10-13 10:40:25] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:40:25] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:41:05] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@b61edb9
+[2022-10-13 10:41:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:41:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:41:07] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_ADMIN, ROLE_USER]
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@411576c7 : read ---- username-random2 || 99
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5af7e2f : read ---- username-random0 || 50
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@2df24f19 : read ---- username-random3 || 33
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@c76762 : read ---- test2 || 25
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5318731f : read ---- username-random1 || 12
+[2022-10-13 10:41:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@2db82155 : read ---- username-random4 || 3
+[2022-10-13 10:41:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2abbd0d9
+[2022-10-13 10:41:50] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:41:50] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:41:51] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@4cf1bd4a : read ---- username-random2 || 99
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5dc8448b : read ---- username-random0 || 50
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@30259c61 : read ---- username-random3 || 33
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@33d08a24 : read ---- test2 || 25
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@255b84a9 : read ---- username-random1 || 12
+[2022-10-13 10:41:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@3a286095 : read ---- username-random4 || 3
+[2022-10-13 10:44:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@427a12b6
+[2022-10-13 10:44:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 10:44:47] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 10:44:48] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@fbdba1c : read ---- username-random2 || 99
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@43735ea0 : read ---- username-random0 || 50
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@535aa7c7 : read ---- username-random3 || 33
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@578781f7 : read ---- test2 || 25
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@7bbd944e : read ---- username-random1 || 12
+[2022-10-13 10:44:48] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@22e253c7 : read ---- username-random4 || 3
+[2022-10-13 12:03:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@b61edb9
+[2022-10-13 12:03:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 12:03:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 12:03:51] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5318731f : read ---- username-random2 || 99
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@520eb9f8 : read ---- username-random0 || 50
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@3ecc9baa : read ---- username-random3 || 33
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@4f2a9903 : read ---- test2 || 25
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@294ebdae : read ---- username-random1 || 12
+[2022-10-13 12:03:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@e280006 : read ---- username-random4 || 3
+[2022-10-13 12:04:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2abbd0d9
+[2022-10-13 12:04:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 12:04:03] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 12:04:04] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@411576c7 : read ---- username-random2 || 99
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5af7e2f : read ---- username-random0 || 50
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@2df24f19 : read ---- username-random3 || 33
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@c76762 : read ---- test2 || 25
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5318731f : read ---- username-random1 || 12
+[2022-10-13 12:04:05] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@2db82155 : read ---- username-random4 || 3
+[2022-10-13 13:11:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$2b0400cc.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@6c8f60f3
+[2022-10-13 13:11:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$2b0400cc.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 13:11:29] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$2b0400cc.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 13:17:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@467233e4
+[2022-10-13 13:17:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 13:17:06] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$e906fb5d.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 13:17:07] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@108fd5d5 : read ---- username-random2 || 99
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@535aa7c7 : read ---- username-random0 || 50
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@578781f7 : read ---- username-random3 || 33
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@7bbd944e : read ---- test2 || 25
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@22e253c7 : read ---- username-random1 || 12
+[2022-10-13 13:17:07] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@2480acc3 : read ---- username-random4 || 3
+[2022-10-13 13:17:36] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2abbd0d9
+[2022-10-13 13:17:36] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 13:17:36] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$86975839.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 13:17:38] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@68c3aa38 : read ---- username-random2 || 99
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@45bbb3e8 : read ---- username-random0 || 50
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@795e8ef5 : read ---- username-random3 || 33
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@13976c57 : read ---- test2 || 25
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@10b7b5f0 : read ---- username-random1 || 12
+[2022-10-13 13:17:38] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@80b70fd : read ---- username-random4 || 3
+[2022-10-13 13:21:49] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$601bb223.configureDefaultServletHandling(36) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@5d3b58ca
+[2022-10-13 13:21:50] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$601bb223.createTable(74) | ======TABLE HN_GROUP already exists !
+[2022-10-13 13:21:50] INFO [main] AppConfig$$EnhancerBySpringCGLIB$$601bb223.createTable(74) | ======TABLE HN_USER already exists !
+[2022-10-13 13:21:51] INFO [main] UserRestServiceController.listUser(36) | 
+--------------> [ROLE_USER]
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@488c6c98 : read ---- username-random2 || 99
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@3e574f9c : read ---- username-random0 || 50
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@5cfa9e8a : read ---- username-random3 || 33
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@218fc40d : read ---- test2 || 25
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@22942eff : read ---- username-random1 || 12
+[2022-10-13 13:21:51] INFO [main] HNServicePermissionEvaluator.hasPermission(26) | ------->edu.hanoi.service.model.User@26bbbe9e : read ---- username-random4 || 3

@@ -1,0 +1,1 @@
+INSERT INTO STUDENT ( name , age ) VALUES ( ? , ? )

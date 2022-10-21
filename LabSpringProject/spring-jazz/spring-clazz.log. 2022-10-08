@@ -1,0 +1,4 @@
+[2022-10-08 09:26:40] INFO [main] ContextStartEventHandler.onApplicationEvent(19) | ====Context start application org.springframework.jdbc.datasource.DriverManagerDataSource@251c8145
+[2022-10-08 09:26:41] INFO [main] ContextStartEventHandler.createTable(30) | ======TABLE HN_GROUP already exists !
+[2022-10-08 09:27:22] INFO [http-nio-8080-exec-5] GroupController.addNew(38) | ======= add new group -----------> edu.hanoi.jazz.dao.model.Group@2e68ec5a
+[2022-10-08 09:27:22] INFO [http-nio-8080-exec-5] GroupDAOImpl.insert(31) | Save group  done!
